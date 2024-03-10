@@ -13,10 +13,10 @@
         Home
       </v-btn>
 
-      <v-btn rounded="lg">
-        <v-icon>mdi-heart</v-icon>
+      <v-btn rounded="lg" to="/settings">
+        <v-icon>mdi-cog</v-icon>
 
-        Like
+        Settings
       </v-btn>
     </v-bottom-navigation>
   </v-layout>
