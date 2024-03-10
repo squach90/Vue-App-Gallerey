@@ -6,6 +6,7 @@ import Home from './components/Home.vue'
 const routes = [
   { path: '/page2', component: Page2 },
   { path: '/home', component: Home },
+  { path: '/', component: Home },
   { path: '/settings', component: Settings }
 ]
 

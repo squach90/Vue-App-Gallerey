@@ -1,4 +1,27 @@
 <template>
+  <v-layout>
+    <v-navigation-drawer v-model="drawer" temporary>
+      <v-list-item
+        prepend-avatar="https://e7.pngegg.com/pngimages/492/286/png-clipart-computer-icons-user-profile-avatar-avatar-heroes-monochrome.png"
+        title="User"
+      ></v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list density="compact" nav>
+        <v-list-item
+          prepend-icon="mdi-view-dashboard"
+          title="Home"
+          value="home"
+        ></v-list-item>
+        <v-list-item
+          prepend-icon="mdi-forum"
+          title="About"
+          value="about"
+        ></v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </v-layout>
   <v-layout class="overflow-visible" rounded="lg" style="height: 56px">
     <v-bottom-navigation v-model="value" color="primary" horizontal>
       <v-btn rounded="lg" to="/page2">
@@ -7,7 +30,7 @@
         Recents
       </v-btn>
 
-      <v-btn rounded="lg" to="/home">
+      <v-btn rounded="lg" to="/">
         <v-icon>mdi-home</v-icon>
 
         Home
@@ -20,12 +43,13 @@
       </v-btn>
     </v-bottom-navigation>
   </v-layout>
+
   <!-- V-CARD -->
   <v-card class="mx-auto" max-width="448">
     <v-layout>
       <v-app-bar color="primary" density="compact">
         <template v-slot:prepend>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         </template>
 
         <v-app-bar-title>Photos</v-app-bar-title>
@@ -80,6 +104,7 @@ export default {
     return {
       showElement: false,
       value: null,
+      drawer: null,
     };
   },
 

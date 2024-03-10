@@ -1,5 +1,14 @@
 <template>
-    <h1>Settings</h1>
+  <h1>Settings</h1>
+    
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      drawer: null,
+    };
+  },
+};
+</script>

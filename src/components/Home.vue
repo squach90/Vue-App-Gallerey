@@ -1,5 +1,15 @@
 <template>
-    <h1>Hello tu es sur la page de home</h1>
+  <h1 align="center">Bonjour,<br> veuiller vous connecter</h1>
+  <br>
+  <Login />
 </template>
 
-<script></script>
+<script>
+import Login from "./Login.vue";
+
+export default {
+  components: {
+    Login,
+  },
+};
+</script>
