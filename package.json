@@ -5,7 +5,9 @@
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lite": "lite-server –port 10001",
+    "start": "npm run lite"
   },
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
