@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <v-layout class="no-scroll">
     <v-row>
       <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
         <v-img
@@ -31,6 +31,14 @@ export default {
       console.log(`Image ${n} clicked!`);
     },
   },
-  
 };
 </script>
+
+<style>
+.no-scroll {
+  height: 100px; /* Définissez une hauteur fixe pour l'élément */
+  white-space: nowrap; /* Empêche le texte de s'enrouler sur plusieurs lignes */
+  overflow: hidden; /* Cache le contenu qui dépasse la hauteur de l'élément */
+  text-overflow: ellipsis; /* Définissez une hauteur fixe pour l'élément */
+}
+</style>
