@@ -11,3 +11,4 @@ registerPlugins(app);
 app.use(router);
 
 app.mount("#app");
+

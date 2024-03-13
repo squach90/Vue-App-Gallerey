@@ -1,10 +1,10 @@
 <template>
-  <center>
+  <div align="center">
     <h1>404</h1>
     <h3>Not Found!</h3>
-    <br>
+    <br />
     <v-btn to="/">Go Home</v-btn>
-  </center>
+  </div>
 </template>
 
 <script>

@@ -4,7 +4,13 @@
     max-width="228"
     src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-v3-slim-text-light.svg"
   ></v-img>
-  <v-card align="center" class="mx-auto" max-width="344" title="Registration">
+  <v-card
+    style="max-height: calc(100vh - 112px); overflow-y: auto"
+    align="center"
+    class="mx-auto"
+    max-width="344"
+    title="Registration"
+  >
     <v-container>
       <v-text-field
         color="primary"
@@ -52,7 +58,6 @@
       </v-btn>
     </v-card-actions>
   </v-card>
-  <br>
 </template>
 
 <script>
